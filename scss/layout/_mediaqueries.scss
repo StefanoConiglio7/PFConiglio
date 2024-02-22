@@ -1,0 +1,51 @@
+@media (max-width:768px){
+    nav,
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .presentation-card,
+  .presentation-header,
+  .presentation-content,
+  .villains-box,
+  .villains-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .villains-content p{
+    font-size: 9px;
+  }
+  .presentation-header,
+  .presentation-content{
+    width: 100%;
+  }
+  .start,
+  .start-art{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .start{
+    height: 100%;
+  }
+  .start-art{
+    width: 100%;
+  }
+  .container,
+  .container-header{
+    flex-direction: column;
+  }
+  .container-header,
+  .container-content{
+    width: 100%;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

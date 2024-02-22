@@ -1,272 +1,319 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
-html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+a {
+  text-decoration: none;
 }
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 200px;
+}
+
 body {
-    text-align: center;
-    background-color: #0F2167;
-  }
-footer{
-    background-color: #13c625;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/** nav**/
-.nav{
-    background-color: #FF6C22;
-    color: #111;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    
-    
-}
-.nav a img{
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    
-}
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-    align-items: start
-    
-}
-.nav-link{
-    text-decoration: none;
-    color: #11009E;
-    font-size: 24px;
-    font-weight: bold;
-    
-}
-/**presentacion**/
-.presentation{
-    margin-top: 20px;
-}
-.presentation-card{
-    display: flex;
-    margin: 10px 0;
-
-}
-.presentation-header{
-    position: relative;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
-.presentation-header img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-.presentation-content{
-    background-color: blanchedalmond;
-    color: #111;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    width: 50%;
-    height: 500px;
-}
-.presentation-content h1{
-    font-size: 40px;
-}
-.presentation-content p{
-    text-align: justify;
-    font-size: 20px;
-}
-/**index contenido**/
-.start{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  
-}
-.start-art{
-    padding: 10px;
-    background-color: #433f69;
-    border: 1px solid white;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 100%;
+  background-color: blueviolet;
 }
 
-.start-art iframe{
-    width: 100%;
+.presentation {
+  margin-top: 20px;
 }
-/**Xenoverse2 contenido**/
-.sub{
-    font-size: 35px;
-    object-fit: cover;
+
+.presentation-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: auto;
+  grid-template-areas: "left left right right";
 }
-.container{
-    display: flex;
+
+.presentation-header {
+  grid-area: left;
+  position: relative;
 }
-.container-card{
-    display: flex;
+
+.presentation-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
-.container-header{
-    position: relative;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+
+.presentation-content {
+  background-color: blanchedalmond;
+  color: #111;
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
 }
-.container-header img{
-    width: 100%;
-    height: 100%;
+
+.presentation-content h1 {
+  font-size: 40px;
 }
-.container-content{
-    background-color: rgb(225, 13, 13);
-    color: #111;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    width: 50%;
-    height: 500px;
+
+.presentation-content p {
+  text-align: justify;
+  font-size: 20px;
 }
-.container-content h2{
-    font-size: 35px;
+
+.nav {
+  background-color: #FF6C22;
+  color: #111;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
-.container-content p{
-    text-align: justify;
-    font-size: 25px;
+
+.nav a img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
 }
-/*fighterz contenido*/
-.img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  align-items: start;
 }
-.img img{
-    width: 50%;
-    object-fit: cover;
+
+.nav-link {
+  text-decoration: none;
+  color: #11009E;
+  font-size: 24px;
+  font-weight: bold;
 }
-.rank p{
-    font-size: 25px;
-    color: #111;
+
+footer {
+  background-color: azure;
+  text-align: center;
 }
-.villains{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
+
+.displey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.villains-box{
-    padding: 10px;
-    display: flex;
+
+.start {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.villains-img{
-    position: relative;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+
+.start-art {
+  padding: 10px;
+  color: black;
+  background-color: #433f69;
+  border: 1px solid white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
 }
-.villains-img img{
-    width: 100%;
-    height: 100%;
+
+.start-art iframe {
+  width: 100%;
 }
-.villains-content{
-    background-color: #864AF9;
-    color: #111;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    width: 50%;
-    height: 500px;
+
+.start-art p {
+  font-size: 12px;
+  color: black;
 }
-.color{
-    text-align: center;
-    background-color: #864AF9;
+
+.sub {
+  font-size: 35px;
+  text-align: center;
 }
-.formu div{
-    padding: 10px;
-    vertical-align: middle;
+
+.color {
+  text-align: center;
+  background-color: #864AF9;
 }
-.lg input{
-    width: 200px;
-    height: 30px;
+
+.formu div {
+  padding: 10px;
+  vertical-align: middle;
 }
-.lg label{
-    font-size: 25px;
+
+.lg input {
+  width: 200px;
+  height: 30px;
 }
-@media (max-width:768px){
-    nav,
-  .nav-list{
+
+.lg label {
+  font-size: 25px;
+}
+
+.rank p {
+  font-size: 25px;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+}
+
+.container-card {
+  display: flex;
+}
+
+.container-header {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.container-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-content {
+  background-color: rgb(225, 13, 13);
+  color: #111;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  width: 50%;
+  height: 500px;
+}
+
+.container-content h2 {
+  font-size: 35px;
+}
+
+.container-content p {
+  text-align: justify;
+  font-size: 25px;
+}
+
+.villains {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.villains-box {
+  padding: 10px;
+  display: flex;
+}
+
+.villains-img {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.villains-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.villains-content {
+  background-color: #864AF9;
+  color: #111;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  width: 50%;
+  height: 500px;
+}
+
+.villains-content p {
+  font-size: 13px;
+}
+
+.villains-content:hover {
+  background-color: aqua;
+  color: rgb(9, 6, 111);
+}
+
+.image {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav,
+  .nav-list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .presentation-card,
   .presentation-header,
-  .presentation-content{
+  .presentation-content,
+  .villains-box,
+  .villains-img {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .villains-content p {
+    font-size: 9px;
+  }
   .presentation-header,
-  .presentation-content{
+  .presentation-content {
     width: 100%;
   }
   .start,
-  .start-art{
+  .start-art {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .start{
+  .start {
     height: 100%;
   }
-  .start-art{
+  .start-art {
     width: 100%;
   }
   .container,
-  .container-header{
+  .container-header {
     flex-direction: column;
   }
   .container-header,
-  .container-content{
+  .container-content {
     width: 100%;
   }
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-.nav-link:hover {
-    background-color: #114a13;
-    color: brown;
-}
+
+/*# sourceMappingURL=style.css.map */

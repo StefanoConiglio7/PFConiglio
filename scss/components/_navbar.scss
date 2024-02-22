@@ -1,0 +1,35 @@
+.nav{
+    background-color: #FF6C22;
+    color: #111;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    
+    
+}
+.nav a img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    align-items: start
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: #11009E;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
