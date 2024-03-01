@@ -1,5 +1,5 @@
 .presentation{
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .presentation-card{
     display: grid;
@@ -19,8 +19,7 @@
     object-fit: fill;
 }
 .presentation-content{
-    background-color: blanchedalmond;
-    color: #111;
+    color: white;
     grid-area: right;
     display: flex;
     flex-direction: column;
@@ -34,4 +33,10 @@
 .presentation-content p{
     text-align: justify;
     font-size: 20px;
+}
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

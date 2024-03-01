@@ -22,8 +22,16 @@
   .presentation-content{
     width: 100%;
   }
-  .start,
+  .start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
   .start-art{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -34,6 +42,9 @@
   .start-art{
     width: 100%;
   }
+  .start-art iframe{
+    height: 80px;
+  }
   .container,
   .container-header{
     flex-direction: column;
@@ -41,6 +52,9 @@
   .container-header,
   .container-content{
     width: 100%;
+  }
+  .formu{
+    flex-direction: column; 
   }
   footer{
     display: flex;

@@ -17,12 +17,8 @@ img {
   width: 200px;
 }
 
-body {
-  background-color: blueviolet;
-}
-
 .presentation {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .presentation-card {
@@ -44,8 +40,7 @@ body {
 }
 
 .presentation-content {
-  background-color: blanchedalmond;
-  color: #111;
+  color: white;
   grid-area: right;
   display: flex;
   flex-direction: column;
@@ -67,38 +62,40 @@ body {
   background-color: #FF6C22;
   color: #111;
   display: flex;
-  gap: 15px;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
-  padding: 10px;
   position: sticky;
-  top: 0;
   z-index: 3;
 }
 
+.nav a {
+  width: 159px;
+  height: 100%;
+}
+
 .nav a img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
 .nav-list {
+  width: 85%;
   list-style-type: none;
   display: flex;
-  gap: 15px;
   align-items: start;
+  gap: 10px;
 }
 
 .nav-link {
   text-decoration: none;
   color: #11009E;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 footer {
-  background-color: azure;
+  background-color: rgb(32, 5, 59);
   text-align: center;
 }
 
@@ -109,109 +106,123 @@ footer {
   gap: 20px;
 }
 
+.fondo-index {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t1 {
+  grid-area: a1;
+}
+
+.t2 {
+  grid-area: a2;
+}
+
+.t3 {
+  grid-area: a3;
+}
+
+.t4 {
+  grid-area: a4;
+}
+
+.t5 {
+  grid-area: a5;
+}
+
+.t6 {
+  grid-area: a6;
+}
+
 .start {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  place-items: center center;
+  grid-template-areas: "a6 a3 a1" "a4 a5 a2";
   gap: 10px;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .start-art {
-  padding: 10px;
-  color: black;
-  background-color: #433f69;
-  border: 1px solid white;
-  width: 300px;
+  color: white;
+  width: 360px;
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 100%;
+  gap: 4px;
 }
 
 .start-art iframe {
-  width: 100%;
+  width: 150px;
+  height: 100%;
 }
 
-.start-art p {
+.start-div {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+.start-div h2 {
   font-size: 12px;
-  color: black;
 }
 
 .sub {
+  color: white;
   font-size: 35px;
   text-align: center;
 }
 
-.color {
-  text-align: center;
-  background-color: #864AF9;
+.fondo-ayudar {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/fondo5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.formu div {
-  padding: 10px;
-  vertical-align: middle;
+.formu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lg textarea {
+  background-color: transparent;
+  color: white;
 }
 
 .lg input {
   width: 200px;
   height: 30px;
+  background-color: black;
+  color: white;
 }
 
 .lg label {
   font-size: 25px;
+  color: rgb(8, 243, 31);
 }
 
-.rank p {
-  font-size: 25px;
-  color: #111;
-}
-
-.container {
-  display: flex;
-  padding: 10px;
-}
-
-.container-card {
-  display: flex;
-}
-
-.container-header {
-  position: relative;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-}
-
-.container-header img {
+.fondo-the {
   width: 100%;
   height: 100%;
-}
-
-.container-content {
-  background-color: rgb(225, 13, 13);
-  color: #111;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: space-between;
-  width: 50%;
-  height: 500px;
-}
-
-.container-content h2 {
-  font-size: 35px;
-}
-
-.container-content p {
-  text-align: justify;
-  font-size: 25px;
+  background: url("../assets/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .villains {
@@ -264,6 +275,71 @@ footer {
   text-align: center;
 }
 
+.fondo-f {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rank p {
+  font-size: 25px;
+  color: orange;
+}
+
+.fondo-xenoverse2 {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+}
+
+.container-card {
+  display: flex;
+}
+
+.container-header {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.container-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-content {
+  background-color: rgb(225, 13, 13);
+  color: #111;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  width: 50%;
+  height: 500px;
+}
+
+.container-content h2 {
+  font-size: 35px;
+}
+
+.container-content p {
+  text-align: justify;
+  font-size: 25px;
+}
+
 @media (max-width: 768px) {
   nav,
   .nav-list {
@@ -288,8 +364,14 @@ footer {
   .presentation-content {
     width: 100%;
   }
-  .start,
+  .start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .start-art {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -300,6 +382,9 @@ footer {
   .start-art {
     width: 100%;
   }
+  .start-art iframe {
+    height: 80px;
+  }
   .container,
   .container-header {
     flex-direction: column;
@@ -307,6 +392,9 @@ footer {
   .container-header,
   .container-content {
     width: 100%;
+  }
+  .formu {
+    flex-direction: column;
   }
   footer {
     display: flex;
