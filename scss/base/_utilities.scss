@@ -15,17 +15,22 @@
 }
 .presentation-header img{
     width: 100%;
-    height: 100%;
+    height: 550px;
     object-fit: fill;
 }
 .presentation-content{
-    color: white;
+    color:$principalcolor;
+    height: 550px;
     grid-area: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
     padding: 20px;
+    animation-name: contenido;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
 }
 .presentation-content h1{
     font-size: 40px;
@@ -37,6 +42,22 @@
 @mixin flex{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+}
+@keyframes contenido{
+    0%{
+        background-color: transparent;
+    }
+    25%{
+        background-color: rgb(196, 17, 17);
+    }
+    50%{
+        background-color: rgb(24, 24, 141);
+    }
+    75%{
+        background-color: rgb(116, 13, 13);
+    }
+    100%{
+        background-color: transparent;
+    }
 }

@@ -4,26 +4,28 @@
     background: url('../assets/fondo5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 5px 30% 5px;
 }
 
 .formu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 500px;
+    background-color: #070F2B;
 }
 .lg{
     @include flex();
-}
-.lg textarea{
-    background-color: transparent;
-    color: $principalcolor;
+    padding: 5px;
 }
 .lg input{
-    width: 200px;
+    width: 100%;
     height: 30px;
     background-color: black;
     color: $principalcolor;
     
+}
+.lg textarea{
+    width: 100%;
+    background-color: transparent;
+    color: $principalcolor;
 }
 .lg label{
     font-size: 25px;

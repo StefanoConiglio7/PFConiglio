@@ -6,7 +6,72 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.rank p{
-    font-size: 25px;
-    color: orange;
+.carrusel{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supercont{
+    width: 100%;
+    height: 950px;
+}
+.supercont h2{
+    color: $principalcolor;
+    padding-left: 35%;
+}
+.cont{
+    height: 300px;
+    padding-left: 10px;
+    display: flex;
+    color:$principalcolor;
+    gap: 30px;
+    
+}
+.cont-img{
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: right;
+}
+.cont-img img{
+    width: 85%;
+    height: 250px;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+}
+.cont-content{
+    height: 200px;
+    width: 50%;
+    padding-top:10px;
+    margin-right: 20px;
+    border: 3px solid #b01313b8;
+    &:hover{
+        color: #111;
+        border-radius: 10px;
+        background-color: rgb(63, 25, 175);
+    }
+    animation-name: efecto2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+.cont-content p{
+    margin-bottom: 0px;
+}
+@keyframes efecto2{
+    0%{
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+    100%{
+        opacity: 1;
+    }
 }
